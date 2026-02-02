@@ -14,6 +14,10 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/content',
   ],
+  content: {
+    experimental: {
+      nativeSqlite: true // Habilita o SQLite nativo do Node.js
+    },
 
   css: ['./app/assets/css/main.css'],
 

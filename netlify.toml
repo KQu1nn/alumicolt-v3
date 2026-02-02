@@ -1,10 +1,10 @@
 [build]
-  command = "npm run build"
+  command = "nuxt build"
   publish = ".output/public"
 
 [build.environment]
   NODE_VERSION = "20"
+  NPM_FLAGS = "--legacy-peer-deps"
 
-# Cache para builds mais rápidos
 [[plugins]]
   package = "@netlify/plugin-cache"
