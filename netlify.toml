@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = ".output/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Cache para builds mais rápidos
+[[plugins]]
+  package = "@netlify/plugin-cache"
