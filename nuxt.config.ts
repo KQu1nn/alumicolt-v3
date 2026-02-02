@@ -37,7 +37,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Alumicolt — Soluções em Esquadrias',
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+        { rel: 'icon', type: 'image/png', href: '/img/icon.webp' }
       ],
       script: [
         {
