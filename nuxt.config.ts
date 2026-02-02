@@ -9,24 +9,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03', // Use uma data atual estável
   devtools: { enabled: true },
 
-  supabase: {
-    redirect: false,
-  },
-
   modules: [
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/content',
-    '@nuxtjs/supabase'
   ],
-
-  // 2. Simplifique o runtimeConfig (O Nuxt já lê variáveis NUXT_PUBLIC_ automaticamente)
-  runtimeConfig: {
-    mercadopagoAccessToken: process.env.MERCADOPAGO_ACCESS_TOKEN,
-    public: {
-      mercadopagoPublicKey: process.env.NUXT_PUBLIC_MERCADOPAGO_PUBLIC_KEY,
-    },
-  },
 
   css: ['./app/assets/css/main.css'],
 
@@ -43,12 +30,6 @@ export default defineNuxtConfig({
       link: [
         // Verifique se a pasta é public/img/icon.webp
         { rel: 'icon', type: 'image/webp', href: '/img/icon.webp' }
-      ],
-      script: [
-        {
-          src: 'https://sdk.mercadopago.com/js/v2',
-          defer: true,
-        },
       ],
     },
   },

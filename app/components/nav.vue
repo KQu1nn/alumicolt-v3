@@ -66,7 +66,6 @@ import { ref } from 'vue'
 import logo from '@/assets/images/logo.png'
 
 const isOpen = ref(false)
-const { totalItems } = useCart()
 </script>
 
 <style scoped>

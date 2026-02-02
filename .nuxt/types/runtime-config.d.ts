@@ -10,20 +10,12 @@ import { RuntimeConfig as UserRuntimeConfig, PublicRuntimeConfig as UserPublicRu
       cdnURL: string,
    },
 
-   mercadopagoAccessToken: string,
-
    nitro: {
       envPrefix: string,
    },
 
    icon: {
       serverKnownCssClasses: Array<any>,
-   },
-
-   supabase: {
-      serviceKey: any,
-
-      secretKey: any,
    },
 
    content: {
@@ -47,49 +39,13 @@ import { RuntimeConfig as UserRuntimeConfig, PublicRuntimeConfig as UserPublicRu
    },
   }
   interface SharedPublicRuntimeConfig {
-   mercadopagoPublicKey: string,
-
-   supabase: {
-      url: string,
-
-      key: string,
-
-      redirect: boolean,
-
-      redirectOptions: {
-         login: string,
-
-         callback: string,
-
-         exclude: Array<any>,
-
-         cookieRedirect: boolean,
-
-         saveRedirectToCookie: boolean,
-      },
-
-      cookieName: string,
-
-      cookiePrefix: string,
-
-      useSsrCookies: boolean,
-
-      cookieOptions: {
-         maxAge: number,
-
-         sameSite: string,
-
-         secure: boolean,
-      },
-
-      clientOptions: any,
-   },
-
    mdc: {
       components: {
          prose: boolean,
 
          map: any,
+
+         customElements: Array<any>,
       },
 
       headings: {
