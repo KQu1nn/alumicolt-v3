@@ -14,6 +14,7 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  'WhatsappBtn': typeof import("../../app/components/WhatsappBtn.vue").default
   'AboutUs': typeof import("../../app/components/aboutUs.vue").default
   'AdminAside': typeof import("../../app/components/admin/adminAside.vue").default
   'Cta': typeof import("../../app/components/cta.vue").default
@@ -79,6 +80,7 @@ interface _GlobalComponents {
   'MDCRenderer': typeof import("../../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCRenderer.vue").default
   'MDCSlot': typeof import("../../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot.vue").default
   'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island").default
+  'LazyWhatsappBtn': LazyComponent<typeof import("../../app/components/WhatsappBtn.vue").default>
   'LazyAboutUs': LazyComponent<typeof import("../../app/components/aboutUs.vue").default>
   'LazyAdminAside': LazyComponent<typeof import("../../app/components/admin/adminAside.vue").default>
   'LazyCta': LazyComponent<typeof import("../../app/components/cta.vue").default>

@@ -14,6 +14,7 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
+export const WhatsappBtn: typeof import("../app/components/WhatsappBtn.vue").default
 export const AboutUs: typeof import("../app/components/aboutUs.vue").default
 export const AdminAside: typeof import("../app/components/admin/adminAside.vue").default
 export const Cta: typeof import("../app/components/cta.vue").default
@@ -79,6 +80,7 @@ export const MDCCached: typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/
 export const MDCRenderer: typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCRenderer.vue").default
 export const MDCSlot: typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot.vue").default
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island").default
+export const LazyWhatsappBtn: LazyComponent<typeof import("../app/components/WhatsappBtn.vue").default>
 export const LazyAboutUs: LazyComponent<typeof import("../app/components/aboutUs.vue").default>
 export const LazyAdminAside: LazyComponent<typeof import("../app/components/admin/adminAside.vue").default>
 export const LazyCta: LazyComponent<typeof import("../app/components/cta.vue").default>

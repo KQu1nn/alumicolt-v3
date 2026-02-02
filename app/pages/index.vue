@@ -11,5 +11,6 @@
         <Reviews />
         <Cta />
         <Footer />
+        <WhatsappBtn />
     </div>
 </template>

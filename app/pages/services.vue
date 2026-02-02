@@ -56,12 +56,13 @@
         <h4 class="text-xl md:text-2xl font-bold text-blue-900">Não encontrou o que procurava?</h4>
         <p class="text-blue-700">Desenvolvemos projetos personalizados sob medida para sua necessidade.</p>
       </div>
-      <a href="https://api.whatsapp.com/send/?phone=5547999999999" class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 whitespace-nowrap">
+      <a href="https://api.whatsapp.com/send/?phone=55087999639709" class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 whitespace-nowrap">
         Falar com Especialista
       </a>
     </div>
   </section>
   <Footer />
+  <WhatsappBtn />
 </template>
 
 <script setup>

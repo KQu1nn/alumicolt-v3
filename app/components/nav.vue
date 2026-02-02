@@ -21,11 +21,11 @@
         </span>
       </a>
 
-      <div class="hidden sm:block bg-blue-500 text-white py-2 px-6 rounded cursor-pointer hover:bg-blue-600 transition text-sm">
-        <button class="font-bold cursor-pointer">
+      <NuxtLink to="/contact" class="hidden sm:block bg-blue-500 text-white py-2 px-6 rounded cursor-pointer hover:bg-blue-600 transition text-sm">
+        <p class="font-bold cursor-pointer">
           Solicitar Orçamento
-        </button>
-      </div>
+        </p>
+      </NuxtLink>
 
       <button @click="isOpen = !isOpen" class="md:hidden text-gray-800 focus:outline-none relative z-[60]">
         <Icon :name="isOpen ? 'lucide:x' : 'lucide:menu'" size="28" />

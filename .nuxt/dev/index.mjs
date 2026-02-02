@@ -1708,7 +1708,7 @@ const __7vid9AwEQ56LBb2s93fZvkyrqjh3FnW91AvZdtdDOQ = (function(nitro) {
 
 const rootDir = "C:/Users/yanso/OneDrive/Área de Trabalho/Alumicolt-v2-main";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[{"src":"https://sdk.mercadopago.com/js/v2","defer":true}],"noscript":[]};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"}],"style":[],"script":[{"src":"https://sdk.mercadopago.com/js/v2","defer":true}],"noscript":[],"title":"Alumicolt — Soluções em Esquadrias"};
 
 const appRootTag = "div";
 

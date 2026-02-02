@@ -104,6 +104,7 @@
     </main>
 
     <Footer />
+    <WhatsappBtn />
   </div>
 </template>
 

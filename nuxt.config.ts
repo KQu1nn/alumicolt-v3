@@ -35,6 +35,10 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      title: 'Alumicolt — Soluções em Esquadrias',
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+      ],
       script: [
         {
           src: 'https://sdk.mercadopago.com/js/v2',

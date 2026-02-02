@@ -1,3 +1,4 @@
+export const WhatsappBtn = () => import('./../../app/components/WhatsappBtn.vue')
 export const AboutUs = () => import('./../../app/components/aboutUs.vue')
 export const AdminAside = () => import('./../../app/components/admin/adminAside.vue')
 export const Cta = () => import('./../../app/components/cta.vue')
@@ -38,4 +39,4 @@ export const MDCRenderer = () => import('./../../node_modules/@nuxtjs/mdc/dist/r
 export const MDCSlot = () => import('./../../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot.vue')
 export const NuxtIsland = () => import('./../../node_modules/nuxt/dist/app/components/nuxt-island')
 export const globalComponents: string[] = ["ProseA","ProseBlockquote","ProseCode","ProseEm","ProseH1","ProseH2","ProseH3","ProseH4","ProseH5","ProseH6","ProseHr","ProseImg","ProseLi","ProseOl","ProseP","ProsePre","ProseScript","ProseStrong","ProseTable","ProseTbody","ProseTd","ProseTh","ProseThead","ProseTr","ProseUl","Icon"]
-export const localComponents: string[] = ["AboutUs","AdminAside","Cta","Demonstration","Footer","Hero","Nav","OurProducts","Reviews","Welcome","WhyUs","NuxtWelcome","NuxtLayout","NuxtErrorBoundary","ClientOnly","DevOnly","ServerPlaceholder","NuxtLink","NuxtLoadingIndicator","NuxtTime","NuxtRouteAnnouncer","NuxtImg","NuxtPicture","ContentRenderer","NuxtPage","NoScript","Link","Base","Title","Meta","Style","Head","Html","Body","MDC","MDCCached","MDCRenderer","MDCSlot","NuxtIsland"]
+export const localComponents: string[] = ["WhatsappBtn","AboutUs","AdminAside","Cta","Demonstration","Footer","Hero","Nav","OurProducts","Reviews","Welcome","WhyUs","NuxtWelcome","NuxtLayout","NuxtErrorBoundary","ClientOnly","DevOnly","ServerPlaceholder","NuxtLink","NuxtLoadingIndicator","NuxtTime","NuxtRouteAnnouncer","NuxtImg","NuxtPicture","ContentRenderer","NuxtPage","NoScript","Link","Base","Title","Meta","Style","Head","Html","Body","MDC","MDCCached","MDCRenderer","MDCSlot","NuxtIsland"]
