@@ -1,13 +1,18 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  // 1. Ative explicitamente a compatibilidade com a v4 do Nuxt
+  future: {
+    compatibilityVersion: 4,
+  },
+  
+  compatibilityDate: '2024-04-03', // Use uma data atual estável
   devtools: { enabled: true },
 
   supabase: {
-    redirect: false, // 🚫 impede redirecionamento automático para /login
+    redirect: false,
   },
+
   modules: [
     '@nuxt/fonts',
     '@nuxt/icon',
@@ -15,11 +20,10 @@ export default defineNuxtConfig({
     '@nuxtjs/supabase'
   ],
 
+  // 2. Simplifique o runtimeConfig (O Nuxt já lê variáveis NUXT_PUBLIC_ automaticamente)
   runtimeConfig: {
     mercadopagoAccessToken: process.env.MERCADOPAGO_ACCESS_TOKEN,
     public: {
-      SUPABASE_URL: process.env.SUPABASE_URL,
-      SUPABASE_KEY: process.env.SUPABASE_KEY,
       mercadopagoPublicKey: process.env.NUXT_PUBLIC_MERCADOPAGO_PUBLIC_KEY,
     },
   },
@@ -27,17 +31,18 @@ export default defineNuxtConfig({
   css: ['./app/assets/css/main.css'],
 
   vite: {
-    server: {
-      allowedHosts: ['.ngrok-free.app'], // 🔥 libera todos os subdomínios ngrok
-    },
     plugins: [tailwindcss()],
   },
 
   app: {
     head: {
       title: 'Alumicolt — Soluções em Esquadrias',
+      htmlAttrs: {
+        lang: 'pt-BR'
+      },
       link: [
-        { rel: 'icon', type: 'image/png', href: '/img/icon.webp' }
+        // Verifique se a pasta é public/img/icon.webp
+        { rel: 'icon', type: 'image/webp', href: '/img/icon.webp' }
       ],
       script: [
         {

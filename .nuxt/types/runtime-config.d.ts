@@ -47,10 +47,6 @@ import { RuntimeConfig as UserRuntimeConfig, PublicRuntimeConfig as UserPublicRu
    },
   }
   interface SharedPublicRuntimeConfig {
-   SUPABASE_URL: string,
-
-   SUPABASE_KEY: string,
-
    mercadopagoPublicKey: string,
 
    supabase: {

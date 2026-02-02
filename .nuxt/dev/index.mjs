@@ -904,8 +904,6 @@ const _inlineRuntimeConfig = {
     }
   },
   "public": {
-    "SUPABASE_URL": "https://sjvwniltwhqbriyzebyu.supabase.co",
-    "SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNqdnduaWx0d2hxYnJpeXplYnl1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc2MDgzMzUsImV4cCI6MjA4MzE4NDMzNX0.0vkre3zFMuZLV1naHNJRRacgO0lCsVC-kvWTpOLhNDo",
     "mercadopagoPublicKey": "APP_USR-2b0cb080-9364-46b8-bfaa-d89d9996f72c",
     "supabase": {
       "url": "https://sjvwniltwhqbriyzebyu.supabase.co",
@@ -1708,7 +1706,7 @@ const __7vid9AwEQ56LBb2s93fZvkyrqjh3FnW91AvZdtdDOQ = (function(nitro) {
 
 const rootDir = "C:/Users/yanso/OneDrive/Área de Trabalho/Alumicolt-v2-main";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/png","href":"/img/icon.webp"}],"style":[],"script":[{"src":"https://sdk.mercadopago.com/js/v2","defer":true}],"noscript":[],"title":"Alumicolt — Soluções em Esquadrias"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/webp","href":"/img/icon.webp"}],"style":[],"script":[{"src":"https://sdk.mercadopago.com/js/v2","defer":true}],"noscript":[],"title":"Alumicolt — Soluções em Esquadrias","htmlAttrs":{"lang":"pt-BR"}};
 
 const appRootTag = "div";
 
