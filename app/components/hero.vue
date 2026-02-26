@@ -21,7 +21,7 @@
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 mt-8">
-        <a href="http://alumicolt.test"
+        <a href="https://alumicolt-test.rf.gd"
           class="flex h-14 items-center justify-center rounded-lg bg-blue-600 px-10 text-white text-lg font-bold hover:bg-blue-700 transition-all shadow-xl cursor-pointer">
           Ver Produtos
       </a>

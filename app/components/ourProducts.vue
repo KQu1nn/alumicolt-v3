@@ -6,7 +6,7 @@
         <p class="text-base md:text-lg text-gray-700">Qualidade e sofisticação em cada detalhe.</p>
       </div>
       
-      <a href="http://alumicolt.test"
+      <a href="https://alumicolt-test.rf.gd"
         class="hidden md:flex flex-row items-center gap-3 cursor-pointer font-bold px-6 py-2.5 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition shadow-md">
         Ir para a Loja
         <Icon name="lucide:shopping-cart" size="20" />
@@ -31,7 +31,7 @@
     </div>
 
     <div class="w-full flex justify-center mt-10">
-      <a href="http://alumicolt.test/"
+      <a href="https://alumicolt-test.rf.gd/"
                 class="w-full sm:w-auto text-center text-white bg-blue-600 font-bold px-10 py-4 rounded-xl cursor-pointer hover:bg-blue-700 transition shadow-lg">
         Ver Todos os Produtos
       </a>

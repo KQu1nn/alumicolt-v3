@@ -62,7 +62,7 @@
           class="px-10 py-4 text-center bg-blue-700 text-white text-base font-bold rounded-xl cursor-pointer hover:bg-blue-800 hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-blue-200">
           Solicitar Orçamento
       </NuxtLink>
-        <a href="http://alumicolt.test"
+        <a href="https://alumicolt-test.rf.gd/"
           class="px-10 py-4 bg-white text-blue-700 border-2 border-blue-700 text-base font-bold rounded-xl hover:bg-blue-50 transition-all duration-300 text-center">
           Ver Catálogo
         </a>

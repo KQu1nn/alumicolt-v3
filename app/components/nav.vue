@@ -8,13 +8,13 @@
     <ul class="hidden md:flex flex-row gap-5 text-md text-gray-800 font-medium">
       <NuxtLink to="/" class="cursor-pointer hover:text-blue-600">Inicio</NuxtLink>
       <NuxtLink to="/services" class="cursor-pointer hover:text-blue-600">Serviços</NuxtLink>
-      <a href="http://alumicolt.test" class="cursor-pointer hover:text-blue-600">Loja</a>
+      <a href="https://alumicolt-test.rf.gd" class="cursor-pointer hover:text-blue-600">Loja</a>
       <NuxtLink to="/projects" class="cursor-pointer hover:text-blue-600">Projetos</NuxtLink>
       <NuxtLink to="/contact" class="cursor-pointer hover:text-blue-600">Contato</NuxtLink>
     </ul>
 
     <div class="flex flex-row gap-4 items-center">
-      <a href="http://alumicolt.test/index.php/carrinho" class="relative cursor-pointer">
+      <a href="https://alumicolt-test.rf.gd/index.php/carrinho" class="relative cursor-pointer">
         <Icon name="lucide:shopping-cart" size="22" class="text-black" />
         <span v-if="totalItems > 0" class="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full">
           {{ totalItems }}
@@ -41,12 +41,12 @@
         <div class="flex flex-col p-8 gap-8">
           <NuxtLink @click="isOpen = false" to="/" class="text-xl font-bold text-gray-900 border-b border-gray-50 pb-2">Inicio</NuxtLink>
           <NuxtLink @click="isOpen = false" to="/services" class="text-xl font-bold text-gray-900 border-b border-gray-50 pb-2">Serviços</NuxtLink>
-          <a href="http://alumicolt.test" class="text-xl font-bold text-gray-900 border-b border-gray-50 pb-2">Loja</a>
+          <a href="https://alumicolt-test.rf.gd" class="text-xl font-bold text-gray-900 border-b border-gray-50 pb-2">Loja</a>
           <NuxtLink @click="isOpen = false" to="/projects" class="text-xl font-bold text-gray-900 border-b border-gray-50 pb-2">Projetos</NuxtLink>
           <NuxtLink @click="isOpen = false" to="/contact" class="text-xl font-bold text-gray-900 border-b border-gray-50 pb-2">Contato</NuxtLink>
           
           <div class="flex flex-col gap-4 mt-4">
-            <a href="http://alumicolt.test" @click="isOpen = false" class="text-center bg-blue-50 text-blue-600 py-4 rounded-xl font-bold">
+            <a href="https://alumicolt-test.rf.gd" @click="isOpen = false" class="text-center bg-blue-50 text-blue-600 py-4 rounded-xl font-bold">
               Ir para Loja
             </a>
             <NuxtLink to="/contact" class="text-center bg-blue-600 text-white py-4 rounded-xl font-bold shadow-lg">

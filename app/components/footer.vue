@@ -25,7 +25,7 @@
           <p class="font-bold text-gray-900 mb-4 text-sm uppercase tracking-tight">Empresa</p>
           <ul class="space-y-2.5 text-xs md:text-sm text-gray-600">
             <li><a href="/" class="hover:text-blue-600 transition-colors">Sobre Nós</a></li>
-            <li><a href="https://alumicolt.test" class="hover:text-blue-600 transition-colors">Produtos</a></li>
+            <li><a href="https://alumicolt-test.rf.gd" class="hover:text-blue-600 transition-colors">Produtos</a></li>
             <li><a href="/" class="hover:text-blue-600 transition-colors">Serviços</a></li>
           </ul>
         </div>

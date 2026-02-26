@@ -10,7 +10,7 @@
     </p>
 
     <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-      <a href="http://alumicolt.test"
+      <a href="https://alumicolt-test.rf.gd"
         class="cursor-pointer px-8 py-4 font-bold bg-white text-blue-700 rounded-xl hover:bg-gray-100 transition-all text-center shadow-lg"
       >
         Ir para Loja Online
