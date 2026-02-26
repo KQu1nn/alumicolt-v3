@@ -1,5 +1,5 @@
 [build]
-  command = "node node_modules/nuxt/bin/nuxt.mjs build"
+  command = "npm rebuild better-sqlite3 && node node_modules/nuxt/bin/nuxt.mjs build"
   publish = ".output/public"
 
 [build.environment]
