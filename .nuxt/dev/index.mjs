@@ -3,42 +3,42 @@ import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, getResponseStatus, getRouterParam, setHeader, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatusText } from 'file://C:/Alumicolt-v2-main/node_modules/h3/dist/index.mjs';
-import { escapeHtml } from 'file://C:/Alumicolt-v2-main/node_modules/@vue/shared/dist/shared.cjs.js';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/Alumicolt-v2-main/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://C:/Alumicolt-v2-main/node_modules/ufo/dist/index.mjs';
-import destr, { destr as destr$1 } from 'file://C:/Alumicolt-v2-main/node_modules/destr/dist/index.mjs';
-import { renderToString } from 'file://C:/Alumicolt-v2-main/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://C:/Alumicolt-v2-main/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://C:/Alumicolt-v2-main/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file://C:/Alumicolt-v2-main/node_modules/scule/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/Alumicolt-v2-main/node_modules/unhead/dist/server.mjs';
-import { stringify, uneval } from 'file://C:/Alumicolt-v2-main/node_modules/devalue/index.js';
-import { isVNode, isRef, toValue } from 'file://C:/Alumicolt-v2-main/node_modules/vue/index.mjs';
-import { createHooks } from 'file://C:/Alumicolt-v2-main/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://C:/Alumicolt-v2-main/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/Alumicolt-v2-main/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Alumicolt-v2-main/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Alumicolt-v2-main/node_modules/unstorage/drivers/fs.mjs';
-import { digest, hash as hash$1 } from 'file://C:/Alumicolt-v2-main/node_modules/ohash/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Alumicolt-v2-main/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, getResponseStatus, getRouterParam, setHeader, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatusText } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/h3/dist/index.mjs';
+import { escapeHtml } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/@vue/shared/dist/shared.cjs.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/ufo/dist/index.mjs';
+import destr, { destr as destr$1 } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/destr/dist/index.mjs';
+import { renderToString } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/vue/server-renderer/index.mjs';
+import { klona } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/scule/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/unhead/dist/server.mjs';
+import { stringify, uneval } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/devalue/index.js';
+import { isVNode, isRef, toValue } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/vue/index.mjs';
+import { createHooks } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/unstorage/drivers/fs.mjs';
+import { digest, hash as hash$1 } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/ohash/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/radix3/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file://C:/Alumicolt-v2-main/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://C:/Alumicolt-v2-main/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://C:/Alumicolt-v2-main/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://C:/Alumicolt-v2-main/node_modules/source-map/source-map.js';
+import consola, { consola as consola$1 } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/youch-core/build/index.js';
+import { Youch } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://C:/Alumicolt-v2-main/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Alumicolt-v2-main/node_modules/errx/dist/index.js';
+import { getContext } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/errx/dist/index.js';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname as dirname$1, resolve as resolve$1, basename, isAbsolute } from 'file://C:/Alumicolt-v2-main/node_modules/pathe/dist/index.mjs';
-import { walkResolver } from 'file://C:/Alumicolt-v2-main/node_modules/unhead/dist/utils.mjs';
-import { getIcons } from 'file://C:/Alumicolt-v2-main/node_modules/@iconify/utils/lib/index.js';
-import { collections } from 'file://C:/Alumicolt-v2-main/.nuxt/nuxt-icon-server-bundle.mjs';
-import sqliteConnector from 'file://C:/Alumicolt-v2-main/node_modules/db0/dist/connectors/node-sqlite.mjs';
+import { dirname as dirname$1, resolve as resolve$1, basename, isAbsolute } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/pathe/dist/index.mjs';
+import { walkResolver } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/unhead/dist/utils.mjs';
+import { getIcons } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/@iconify/utils/lib/index.js';
+import { collections } from 'file://C:/Users/Eric/Desktop/alumicolt-v3/.nuxt/nuxt-icon-server-bundle.mjs';
+import sqliteConnector from 'file://C:/Users/Eric/Desktop/alumicolt-v3/node_modules/db0/dist/connectors/node-sqlite.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"C:/Alumicolt-v2-main/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/Eric/Desktop/alumicolt-v3/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -50,11 +50,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Alumicolt-v2-main","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Alumicolt-v2-main/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Alumicolt-v2-main/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Alumicolt-v2-main/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Alumicolt-v2-main/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/Eric/Desktop/alumicolt-v3","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/Eric/Desktop/alumicolt-v3/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/Eric/Desktop/alumicolt-v3/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/Eric/Desktop/alumicolt-v3/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Users/Eric/Desktop/alumicolt-v3/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -961,7 +961,7 @@ const _inlineRuntimeConfig = {
     },
     "localDatabase": {
       "type": "sqlite",
-      "filename": "C:/Alumicolt-v2-main/.data/content/contents.sqlite"
+      "filename": "C:/Users/Eric/Desktop/alumicolt-v3/.data/content/contents.sqlite"
     },
     "integrityCheck": true
   }
@@ -2342,13 +2342,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _3bAbI31HP6kVgcvOHdGOpKgPBhX7KPNDudeEbnilt8 = (function(nitro) {
+const _tDaOGqz_Yi4tE3NfiBjs156Cy8G3nN4r8K1kynBEVE = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "C:/Alumicolt-v2-main";
+const rootDir = "C:/Users/Eric/Desktop/alumicolt-v3";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/webp","href":"/img/icon.webp"}],"style":[],"script":[],"noscript":[],"title":"Alumicolt — Soluções em Esquadrias","htmlAttrs":{"lang":"pt-BR"}};
 
@@ -2377,7 +2377,7 @@ const asyncContext = getContext("nuxt-dev", {
 	asyncContext: true,
 	AsyncLocalStorage
 });
-const _JNJO2dLAxichER1dbrNNstnFyjJTR73mEzUOY3OBlM = (nitroApp) => {
+const _4TJooSLGfpCXveOvOcn_sC6Tndk7OwThPz1v099AWQ = (nitroApp) => {
 	const handler = nitroApp.h3App.handler;
 	nitroApp.h3App.handler = (event) => {
 		return asyncContext.callAsync({
@@ -2451,8 +2451,8 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _3bAbI31HP6kVgcvOHdGOpKgPBhX7KPNDudeEbnilt8,
-_JNJO2dLAxichER1dbrNNstnFyjJTR73mEzUOY3OBlM
+  _tDaOGqz_Yi4tE3NfiBjs156Cy8G3nN4r8K1kynBEVE,
+_4TJooSLGfpCXveOvOcn_sC6Tndk7OwThPz1v099AWQ
 ];
 
 const assets = {};
@@ -2480,7 +2480,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _eXDTyv = eventHandler((event) => {
+const _81tOV_ = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -2618,9 +2618,9 @@ function publicAssetsURL(...path) {
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
 // @ts-expect-error file will be produced after app build
-const getServerEntry = () => import('file://C:/Alumicolt-v2-main/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('file://C:/Users/Eric/Desktop/alumicolt-v3/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
 // @ts-expect-error file will be produced after app build
-const getClientManifest = () => import('file://C:/Alumicolt-v2-main/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('file://C:/Users/Eric/Desktop/alumicolt-v3/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 // -- SSR Renderer --
 const getSSRRenderer = lazyCachedFunction(async () => {
 	// Load server bundle
@@ -3033,7 +3033,7 @@ async function fetchDatabase(event, collection) {
 
 const warnOnceSet = /* @__PURE__ */ new Set();
 const DEFAULT_ENDPOINT = "https://api.iconify.design";
-const _qX3u67 = defineCachedEventHandler(async (event) => {
+const _GJ5S97 = defineCachedEventHandler(async (event) => {
   const url = getRequestURL(event);
   if (!url)
     return createError({ status: 400, message: "Invalid icon request" });
@@ -3091,7 +3091,7 @@ const _qX3u67 = defineCachedEventHandler(async (event) => {
   // 1 week
 });
 
-const _nYLN6n = eventHandler(async (event) => {
+const _7U1ZrU = eventHandler(async (event) => {
   const collection = getRouterParam(event, "collection") || event.path?.split("/")?.[2] || "";
   setHeader(event, "Content-Type", "text/plain");
   const data = await useStorage().getItem(`build:content:database.compressed.mjs`) || "";
@@ -3102,7 +3102,7 @@ const _nYLN6n = eventHandler(async (event) => {
       return content.substring(lineStart.length, content.length - 1);
     }
   }
-  return await import('file://C:/Alumicolt-v2-main/.nuxt/content/database.compressed.mjs').then((m) => m[collection]);
+  return await import('file://C:/Users/Eric/Desktop/alumicolt-v3/.nuxt/content/database.compressed.mjs').then((m) => m[collection]);
 });
 
 async function decompressSQLDump(base64Str, compressionType = "gzip") {
@@ -3402,7 +3402,7 @@ function cleanupQuery(query, options = { removeString: false }) {
   return result;
 }
 
-const _oO1Cbz = eventHandler(async (event) => {
+const _jS0yvW = eventHandler(async (event) => {
   const { sql } = await readBody(event);
   const collection = getRouterParam(event, "collection") || event.path?.split("/")?.[2] || "";
   assertSafeQuery(sql, collection);
@@ -3413,19 +3413,19 @@ const _oO1Cbz = eventHandler(async (event) => {
   return loadDatabaseAdapter(conf).all(sql);
 });
 
-const _lazy_usYClv = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_TF83AJ = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '', handler: _eXDTyv, lazy: false, middleware: true, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_usYClv, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _81tOV_, lazy: false, middleware: true, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_TF83AJ, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
-  { route: '/api/_nuxt_icon/:collection', handler: _qX3u67, lazy: false, middleware: false, method: undefined },
-  { route: '/__nuxt_content/content/sql_dump.txt', handler: _nYLN6n, lazy: false, middleware: false, method: undefined },
-  { route: '/__nuxt_content/info/sql_dump.txt', handler: _nYLN6n, lazy: false, middleware: false, method: undefined },
-  { route: '/__nuxt_content/content/query', handler: _oO1Cbz, lazy: false, middleware: false, method: undefined },
-  { route: '/__nuxt_content/info/query', handler: _oO1Cbz, lazy: false, middleware: false, method: undefined },
-  { route: '/_fonts/**', handler: _lazy_usYClv, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_usYClv, lazy: true, middleware: false, method: undefined }
+  { route: '/api/_nuxt_icon/:collection', handler: _GJ5S97, lazy: false, middleware: false, method: undefined },
+  { route: '/__nuxt_content/content/sql_dump.txt', handler: _7U1ZrU, lazy: false, middleware: false, method: undefined },
+  { route: '/__nuxt_content/info/sql_dump.txt', handler: _7U1ZrU, lazy: false, middleware: false, method: undefined },
+  { route: '/__nuxt_content/content/query', handler: _jS0yvW, lazy: false, middleware: false, method: undefined },
+  { route: '/__nuxt_content/info/query', handler: _jS0yvW, lazy: false, middleware: false, method: undefined },
+  { route: '/_fonts/**', handler: _lazy_TF83AJ, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_TF83AJ, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

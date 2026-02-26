@@ -59,7 +59,7 @@
 
       <div class="flex flex-col sm:flex-row gap-5 pt-4">
         <NuxtLink to="/contact"
-          class="px-10 py-4 bg-blue-700 text-white text-base font-bold rounded-xl cursor-pointer hover:bg-blue-800 hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-blue-200">
+          class="px-10 py-4 text-center bg-blue-700 text-white text-base font-bold rounded-xl cursor-pointer hover:bg-blue-800 hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-blue-200">
           Solicitar Orçamento
       </NuxtLink>
         <a href="http://alumicolt.test"

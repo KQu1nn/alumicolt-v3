@@ -1,1 +1,1 @@
-export { default } from "file:///C:/Alumicolt-v2-main/node_modules/@nuxt/vite-builder/dist/vite-node-entry.mjs"
+export { default } from "file:///C:/Users/Eric/Desktop/alumicolt-v3/node_modules/@nuxt/vite-builder/dist/vite-node-entry.mjs"
