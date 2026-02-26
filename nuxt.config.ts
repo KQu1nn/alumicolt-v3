@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-  
+
   compatibilityDate: '2024-04-03', // Use uma data atual estável
   devtools: { enabled: true },
 
@@ -24,6 +24,10 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [tailwindcss()],
+  },
+
+  nitro: {
+    preset: 'netlify'
   },
 
   app: {
