@@ -86,22 +86,22 @@
 </template>
 
 <script setup lang="ts">
-import grades from '/assets/images/grades.webp'
+import moderna from '/assets/images/imagesProd/fachada-moderna.jpeg'
 import pivot from '/assets/images/pivot.webp'
-import ultraSlim from '/assets/images/ultra slim.webp'
-import img1 from '/assets/images/img1.jpg'
-import img2 from '/assets/images/hero01.jpg'
+import janela from '/assets/images/imagesProd/janela-temperada.JPG'
+import corporativo from '/assets/images/imagesProd/projeto-corporativo.jpg'
+import sala from '/assets/images/imagesProd/sala.jpg'
 
 const featured = {
   title: 'Fachada Residencial Moderna',
-  image: grades
+  image: moderna
 }
 
 const gallery = [
   { title: 'Porta de Alumínio Premium', image: pivot },
-  { title: 'Janela com Vidro Temperado', image: ultraSlim },
-  { title: 'Projeto Corporativo', image: img1 },
-  { title: 'Sala Integrada com Esquadrias', image: img2 }
+  { title: 'Janela com Vidro Temperado', image: janela },
+  { title: 'Projeto Corporativo', image: corporativo },
+  { title: 'Sala Integrada com Esquadrias', image: sala }
 ]
 
 // lightbox

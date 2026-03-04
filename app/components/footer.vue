@@ -59,7 +59,7 @@
     <div class="border-t border-gray-200 bg-white py-6">
       <div class="px-6 md:px-15 flex flex-col md:flex-row justify-between items-center gap-3 text-[10px] md:text-xs text-gray-500">
         <p>© 2026 Alumicolt Esquadrias. Petrolina-PE.</p>
-        <a href="https://api.whatsapp.com/send?phone=5587992007632">Desenvolvido por <span class="text-blue-700 font-bold tracking-wide">RAMON KELVIN</span></a>
+        <a href="https://api.whatsapp.com/send?phone=5587992007637">Desenvolvido por <span class="text-blue-700 font-bold tracking-wide">RAMON KELVIN</span></a>
       </div>
     </div>
   </footer>

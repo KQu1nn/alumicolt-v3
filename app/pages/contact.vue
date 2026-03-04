@@ -16,6 +16,7 @@
           
           <div class="flex flex-col gap-10">
             
+            <!-- WhatsApp -->
             <div class="bg-green-50 border border-green-100 rounded-3xl p-8 relative overflow-hidden group">
               <div class="relative z-10">
                 <div class="w-12 h-12 bg-green-500 text-white flex items-center justify-center rounded-xl mb-6 shadow-lg">
@@ -34,6 +35,7 @@
               <Icon name="logos:whatsapp-icon" class="absolute -bottom-10 -right-10 text-green-200/30 w-48 h-48 -rotate-12" />
             </div>
 
+            <!-- Contatos rápidos -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div class="flex flex-col gap-2">
                 <div class="flex items-center gap-2 text-blue-600 font-bold text-sm">
@@ -46,11 +48,39 @@
                 <div class="flex items-center gap-2 text-blue-600 font-bold text-sm">
                   <Icon name="lucide:map-pin" size="18" /> Endereço
                 </div>
-                <p class="text-gray-600 text-sm md:text-base">R. Raul Lins • Dom Avelar Petrolina-PE</p>
+                <p class="text-gray-600 text-sm md:text-base">R. Raul Lins • Dom Avelar, Petrolina-PE</p>
               </div>
             </div>
+
+            <!-- Mapa -->
+            <div class="flex flex-col gap-3">
+              <div class="flex items-center gap-2 text-blue-600 font-bold text-sm">
+                <Icon name="lucide:navigation" size="18" /> Como chegar
+              </div>
+              <div class="rounded-2xl overflow-hidden border border-gray-100 shadow-sm relative">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.8!2d-40.4845546!3d-9.3658515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7737102f1ebdd5d%3A0x6ffe00f873f9bb01!2sAlumicolt!5e0!3m2!1spt-BR!2sbr!4v1"
+                  width="100%"
+                  height="220"
+                  style="border:0; display:block; filter: grayscale(15%) contrast(1.05);"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <a
+                  href="https://www.google.com/maps/place/Alumicolt/@-9.3658515,-40.4845546,18z"
+                  target="_blank"
+                  class="absolute bottom-3 right-3 bg-white text-blue-600 text-xs font-bold px-4 py-2 rounded-xl shadow-md hover:bg-blue-600 hover:text-white transition-all flex items-center gap-1.5 border border-gray-100"
+                >
+                  <Icon name="lucide:external-link" size="13" />
+                  Abrir no Maps
+                </a>
+              </div>
+            </div>
+
           </div>
 
+          <!-- Formulário -->
           <div class="bg-gray-50 border border-gray-100 rounded-3xl p-8 md:p-12 shadow-sm">
             <h3 class="text-2xl font-bold text-gray-900 mb-8">Envie uma mensagem</h3>
             
@@ -109,8 +139,6 @@
 </template>
 
 <script setup>
-// Número do WhatsApp da Alumicolt (substitua pelo real)
-// Formato: CodigoPaísCodigoAreaNumero (sem espaços ou traços)
 const whatsappNumber = "55087999639709"
 
 const formData = ref({
@@ -120,20 +148,13 @@ const formData = ref({
 })
 
 const handleSend = () => {
-  // Criamos a mensagem formatada
   const message = `*Nova Solicitação de Orçamento*%0A` +
                   `------------------------------%0A` +
                   `*Nome:* ${formData.value.nome}%0A` +
                   `*Telefone:* ${formData.value.telefone}%0A` +
                   `*Mensagem:* ${formData.value.mensagem}`
 
-  // URL do WhatsApp
   const url = `https://wa.me/${whatsappNumber}?text=${message}`
-
-  // Abre em uma nova aba
   window.open(url, '_blank')
-  
-  // Opcional: Limpar formulário após envio
-  // formData.value = { nome: '', telefone: '', mensagem: '' }
 }
 </script>

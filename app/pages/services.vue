@@ -12,7 +12,7 @@
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
       
       <div v-for="(servico, index) in servicos" :key="index" 
            class="group cursor-pointer bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500">
@@ -68,6 +68,7 @@
 <script setup>
 import img1 from '@/assets/images/instalacao.jpg'
 import img2 from '@/assets/images/img2.jpg'
+
 const servicos = [
   {
     title: 'Instalação Técnica',
@@ -77,11 +78,11 @@ const servicos = [
     items: ['Vedação termoacústica', 'Ajuste de pressão', 'Limpeza técnica']
   },
   {
-    title: 'Manutenção Preventiva',
-    description: 'Prolongue a vida útil dos seus portões e janelas com revisões periódicas de roldanas e motores.',
-    icon: 'lucide:wrench',
+    title: 'Instalação Própria',
+    description: 'Contamos com equipe técnica própria para garantir agilidade, responsabilidade e execução com excelência em cada obra.',
+    icon: 'lucide:hard-hat',
     image: img2,
-    items: ['Lubrificação de trilhos', 'Troca de borrachas', 'Regulagem de motores']
+    items: ['Equipe técnica especializada', 'Prazo cumprido com responsabilidade', 'Acabamento impecável e garantido']
   },
   {
     title: 'Consultoria de Projetos',
@@ -89,6 +90,13 @@ const servicos = [
     icon: 'lucide:layout',
     image: 'https://leaogerenciamento.com.br/wp-content/uploads/2024/10/projetos.png',
     items: ['Cálculo de carga de vento', 'Especificação de cores', 'Otimização de custos']
+  },
+  {
+    title: 'Atuação Nacional',
+    description: 'Com anos de experiência no mercado, já executamos projetos em obras públicas e privadas em diversas regiões do Brasil.',
+    icon: 'lucide:map-pin',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format',
+    items: ['Obras públicas e privadas', 'Projetos em todo o território nacional', 'Logística e suporte em qualquer estado']
   }
 ]
 </script>
