@@ -27,7 +27,10 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: 'static'
+    preset: 'static',
+    prerender: {
+    failOnError: false,
+  },
   },
 
   app: {
