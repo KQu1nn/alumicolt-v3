@@ -4,38 +4,38 @@
         <Nav />
 
         <!-- HEADER -->
-        <section class="w-full px-6 md:px-50 py-16 md:py-10">
-      <div class="max-w-5xl mx-auto flex flex-col gap-6">
-        
-        <!-- Breadcrumb -->
-        <nav class="flex items-center gap-2 text-gray-500 text-sm">
-          <NuxtLink to="/" class="hover:text-blue-600 transition">Início</NuxtLink>
-          <Icon name="lucide:chevron-right" size="14" />
-          <NuxtLink to="/produtos" class="hover:text-blue-600 transition">Produtos</NuxtLink>
-          <Icon name="lucide:chevron-right" size="14" />
-          <span class="text-blue-600 font-semibold">{{ product.title }}</span>
-        </nav>
+        <section class="w-full px-6 md:px-50 py-10 md:py-10">
+            <div class="max-w-5xl mx-auto flex flex-col gap-6">
 
-        <!-- Linha e Subtítulo -->
-        <div class="flex items-center gap-2">
-          <span class="w-10 h-[2px] bg-blue-600"></span>
-          <p class="text-blue-600 font-bold tracking-widest text-sm uppercase">Detalhes do Produto</p>
-        </div>
+                <!-- Breadcrumb -->
+                <nav class="flex items-center gap-2 text-gray-500 text-sm">
+                    <NuxtLink to="/" class="hover:text-blue-600 transition">Início</NuxtLink>
+                    <Icon name="lucide:chevron-right" size="14" />
+                    <NuxtLink to="/produtos" class="hover:text-blue-600 transition">Produtos</NuxtLink>
+                    <Icon name="lucide:chevron-right" size="14" />
+                    <span class="text-blue-600 font-semibold">{{ product.title }}</span>
+                </nav>
 
-        <!-- Título e Descrição -->
-        <div class="flex flex-col gap-3">
-          <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-            {{ product.title }}
-          </h1>
-          <p class="text-gray-600 text-base md:text-lg max-w-2xl">
-            {{ product.description }}
-          </p>
-        </div>
-      </div>
-    </section>
+                <!-- Linha e Subtítulo -->
+                <div class="flex items-center gap-2">
+                    <span class="w-10 h-[2px] bg-blue-600"></span>
+                    <p class="text-blue-600 font-bold tracking-widest text-sm uppercase">Detalhes do Produto</p>
+                </div>
+
+                <!-- Título e Descrição -->
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                        {{ product.title }}
+                    </h1>
+                    <p class="text-gray-600 text-base md:text-lg max-w-2xl">
+                        {{ product.description }}
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <!-- CONTEÚDO -->
-        <section class="flex-1 max-w-5xl mx-auto px-6 md:px-12 py-10 flex flex-col gap-12">
+        <section class="flex-1 max-w-5xl mx-auto px-6 md:px-12 py-5 md:py-10 flex flex-col gap-12">
 
             <!-- IMAGEM PRINCIPAL -->
             <div

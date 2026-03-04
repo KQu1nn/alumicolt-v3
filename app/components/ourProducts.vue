@@ -1,15 +1,25 @@
 <template>
   <section class="w-full px-6 md:px-15 py-16 md:py-20 bg-gray-100">
     <!-- Cabeçalho -->
-    <div class="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-10">
-      <div class="flex flex-col gap-2">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Nossos Produtos</h2>
-        <p class="text-base md:text-lg text-gray-700">Qualidade e sofisticação em cada detalhe.</p>
+    <div
+      class="w-full flex flex-col md:flex-row items-center md:items-end justify-between gap-6 mb-12 text-center md:text-left"
+    >
+      <!-- Texto -->
+      <div class="flex flex-col gap-3 md:w-8/12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+          Nossos Produtos
+        </h2>
+        <p class="text-base md:text-md text-gray-700 leading-relaxed">
+          <b class="text-blue-700">Soluções sob medida para todos os tipos de projetos.</b>
+          Todos os nossos produtos seguem padrões rigorosos de qualidade e são executados
+          com foco em durabilidade, estética e funcionalidade.
+        </p>
       </div>
 
+      <!-- Botão -->
       <a
         href="https://alumicolt-test.rf.gd"
-        class="hidden md:flex flex-row items-center gap-3 cursor-pointer font-bold px-6 py-2.5 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition shadow-md"
+        class="flex flex-row items-center justify-center gap-3 font-bold px-6 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition shadow-md w-full md:w-auto"
       >
         Ir para a Loja
         <Icon name="lucide:shopping-cart" size="20" />
@@ -17,7 +27,7 @@
     </div>
 
     <!-- Cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 mb-14">
       <NuxtLink
         v-for="card in visibleProducts"
         :key="card.title"
@@ -25,28 +35,30 @@
         class="border border-gray-200 rounded-2xl p-5 bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group cursor-pointer"
       >
         <div class="flex flex-col gap-3">
-          <!-- Ícone -->
-          <span class="w-11 h-11 bg-blue-100 flex items-center justify-center rounded-xl group-hover:bg-blue-200 transition-colors">
+          <span
+            class="w-11 h-11 bg-blue-100 flex items-center justify-center rounded-xl group-hover:bg-blue-200 transition-colors"
+          >
             <Icon :name="card.icon" size="24" class="text-blue-600" />
           </span>
-
-          <!-- Texto -->
           <h3 class="text-lg font-bold text-gray-900 leading-snug">{{ card.title }}</h3>
           <p class="text-gray-600 text-sm leading-relaxed line-clamp-3">
             {{ card.description }}
           </p>
         </div>
 
-        <!-- Ver detalhes -->
         <div class="flex items-center gap-1 mt-5 text-blue-600 font-semibold text-sm">
           Ver detalhes
-          <Icon name="lucide:arrow-right" size="16" class="group-hover:translate-x-1 transition-transform" />
+          <Icon
+            name="lucide:arrow-right"
+            size="16"
+            class="group-hover:translate-x-1 transition-transform"
+          />
         </div>
       </NuxtLink>
     </div>
 
     <!-- Botão Ver Todos -->
-    <div class="w-full flex justify-center mt-10">
+    <div class="w-full flex justify-center mt-4 relative z-10">
       <button
         v-if="!showAll"
         @click="showAll = true"
