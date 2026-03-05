@@ -101,24 +101,24 @@ const projetos = [
     title: 'Residência G.A',
     description: 'Portas de correr minimalistas de 6 metros, integrando sala e área gourmet.',
     categoria: 'Alto Padrão',
-    location: 'Curitiba, PR',
-    year: '2023',
+    location: 'Petrolina, PE',
+    year: '2026',
     image: img2
   },
   {
     title: 'Condomínio Solar',
     description: 'Janelas com persiana integrada automatizada em mais de 40 unidades.',
     categoria: 'Residencial',
-    location: 'Joinville, SC',
-    year: '2024',
+    location: 'Petrolina, PE',
+    year: '2026',
     image: img3
   },
   {
-    title: 'Shopping Vila Nova',
+    title: 'JR Telecom',
     description: 'Divisórias de vidro temperado e portões automáticos industriais.',
     categoria: 'Comercial',
-    location: 'Blumenau, SC',
-    year: '2022',
+    location: 'Petrolina, PE',
+    year: '2026',
     image: img4
   }
 ]

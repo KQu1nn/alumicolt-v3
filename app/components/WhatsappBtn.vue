@@ -5,7 +5,7 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  phone: '5587999639709', // Substitua pelo número da Alumicolt
+  phone: '5587999639709', 
   message: 'Olá! Gostaria de saber mais sobre os produtos da Alumicolt.'
 });
 

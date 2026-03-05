@@ -9,7 +9,6 @@
         Somos especialistas em soluções sob medida que unem <b>design moderno, precisão técnica</b> e <b>resistência incomparável</b> para todos os tipos de projeto.
       </p>
 
-      <!-- Botões -->
       <div class="flex flex-col sm:flex-row gap-4 mt-4">
         <NuxtLink
           to="/projects"
@@ -26,7 +25,6 @@
       </div>
     </div>
 
-    <!-- Cards -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
       <div
         v-for="card in cards"

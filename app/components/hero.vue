@@ -3,8 +3,12 @@
     class="relative w-full min-h-screen flex items-center bg-center bg-no-repeat bg-cover overflow-hidden" 
     :style="{ backgroundImage: `url(${heroImage})` }"
   >
-    
-    <div class="absolute inset-0 bg-black/50 md:bg-gradient-to-r md:from-black/90 md:via-black/40 md:to-transparent" />
+
+    <!-- Overlay Mobile -->
+    <div class="absolute inset-0 bg-black/70 md:hidden"></div>
+
+    <!-- Overlay Desktop -->
+    <div class="absolute inset-0 hidden md:block bg-gradient-to-r from-black/90 to-black/40"></div>
 
     <div class="relative z-10 w-full px-6 md:px-15 lg:max-w-4xl py-25 md:py-0">
       
@@ -16,8 +20,8 @@
         Esquadrias de alumínio que <span class="text-blue-400">elevam o padrão</span> da sua obra
       </h1>
 
-      <p class="mt-4 text-white/90 text-base md:text-lg lg:text-xl max-w-2xl leading-relaxed">
-        Design sofisticado, vedação impecável e durabilidade garantida. O acabamento que sua construção merece.
+      <p class="mt-4 text-white/90 text-base md:text-lg lg:text-xl max-w-[36rem] leading-relaxed">
+        Design sofisticado, vedação impecável e durabilidade garantida.  O acabamento que sua construção merece.
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 mt-8">

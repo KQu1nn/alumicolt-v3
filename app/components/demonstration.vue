@@ -104,7 +104,6 @@ const gallery = [
   { title: 'Sala Integrada com Esquadrias', image: sala }
 ]
 
-// lightbox
 const lightboxImage = ref<string | null>(null)
 const openLightbox = (src: string) => (lightboxImage.value = src)
 const closeLightbox = () => (lightboxImage.value = null)

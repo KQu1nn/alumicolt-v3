@@ -6,7 +6,7 @@
         <div class="col-span-2 lg:col-span-1 space-y-4">
           <img :src="logo" alt="Alumicolt Logo" class="w-28 md:w-32">
           <p class="text-xs md:text-sm text-gray-600 leading-relaxed max-w-xs">
-            Desde 2010 sendo referência em esquadrias de alto padrão e soluções em alumínio no Vale do São Francisco.
+            Desde 2016 sendo referência em esquadrias de alto padrão e soluções em alumínio no Vale do São Francisco.
           </p>
           <div class="flex items-center gap-4 text-gray-500">
             <a href="https://instagram.com/alumicolt/" target="_blank" aria-label="Instagram">

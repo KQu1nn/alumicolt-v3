@@ -1,4 +1,3 @@
-<!-- pages/produtos/[slug].vue -->
 <template>
     <div class="min-h-screen bg-gray-50 flex flex-col">
         <Nav />
@@ -6,12 +5,18 @@
         <!-- HEADER -->
         <section class="w-full px-6 md:px-50 py-10 md:py-10">
             <div class="max-w-5xl mx-auto flex flex-col gap-6">
+                <div class="flex items-center gap-1">
+                    <Icon name="lucide:arrow-left" size="15" class="text-gray-600" />
+                    <NuxtLink to="/" class="text-sm text-gray-600 font-semibold">
+                        Voltar
+                    </NuxtLink>
+                </div>
 
-                <!-- Breadcrumb -->
+
                 <nav class="flex items-center gap-2 text-gray-500 text-sm">
                     <NuxtLink to="/" class="hover:text-blue-600 transition">Início</NuxtLink>
                     <Icon name="lucide:chevron-right" size="14" />
-                    <NuxtLink to="/produtos" class="hover:text-blue-600 transition">Produtos</NuxtLink>
+                    <NuxtLink to="/" class="hover:text-blue-600 transition">Produtos</NuxtLink>
                     <Icon name="lucide:chevron-right" size="14" />
                     <span class="text-blue-600 font-semibold">{{ product.title }}</span>
                 </nav>
@@ -90,17 +95,21 @@
 </template>
 
 <script setup>
-// ✅ Importações corretas das imagens locais
 import fachadaGlazing from '~/assets/images/imagesProd/fachada-glazing.png'
 import ripados from '~/assets/images/imagesProd/ripados.png'
-import gradis from '~/assets/images/imagesProd/gradis.jpg'
+import gradis from '~/assets/images/imagesProd/gradis.png'
 import portasEntrada from '~/assets/images/imagesProd/portas-de-entrada.avif'
 import box from '~/assets/images/imagesProd/box.webp'
+import temperados from '~/assets/images/imagesProd/temperados.png'
+import claraboias from '~/assets/images/imagesProd/claraboias.jpg'
+import contramarco from '~/assets/images/imagesProd/contramarco.png'
+import brise from '~/assets/images/imagesProd/brise.jpg'
+import guardaCorpo from '~/assets/images/imagesProd/guarda-corpo.webp'
+import esquadria from '~/assets/images/imagesProd/esquadrias.jpg'
 
 const route = useRoute()
 const lojaUrl = 'https://alumicolt-test.rf.gd'
 
-// ✅ Cada produto aponta para a imagem importada
 const allProducts = [
     {
         title: 'Fachadas Glazing',
@@ -190,7 +199,7 @@ Os sistemas de abertura incluem portas articuladas, deslizantes e dobráveis, ca
     {
         title: 'Kits Temperados',
         slug: 'kits-temperados',
-        image: box,
+        image: temperados,
         shortDescription: 'Conjuntos completos para portas e janelas com vidro temperado, pensados para facilitar a instalação com desempenho garantido.',
         description: `Os kits temperados são conjuntos completos que reúnem vidro temperado, perfis de alumínio e ferragens em um único pacote pensado para facilitar a execução de projetos com agilidade e qualidade garantida. São ideais para construtoras, vidraçarias e profissionais da construção civil.
 
@@ -207,7 +216,7 @@ Os kits são disponibilizados em espessuras de 8mm a 12mm e podem ser aplicados 
     {
         title: 'Claraboias',
         slug: 'claraboias',
-        image: fachadaGlazing,
+        image: claraboias,
         shortDescription: 'Iluminação natural com eficiência e resistência. Ideais para aproveitar a luz do dia sem abrir mão da proteção.',
         description: `As claraboias são elementos arquitetônicos que permitem a entrada de luz natural em ambientes internos, reduzindo o consumo de energia elétrica e criando atmosferas mais agradáveis e valorizadas. São amplamente utilizadas em residências, galpões, áreas de lazer e edifícios comerciais.
 
@@ -224,7 +233,7 @@ Cada claraboia é produzida sob medida, adaptando-se tanto a coberturas planas q
     {
         title: 'Contramarcos',
         slug: 'contramarcos',
-        image: ripados,
+        image: contramarco,
         shortDescription: 'Acabamento técnico que garante encaixe perfeito das esquadrias, com estética limpa e melhor vedação.',
         description: `Os contramarcos são peças técnicas essenciais para a instalação correta de esquadrias, garantindo o encaixe preciso entre a janela ou porta e a alvenaria. Além da função estrutural, proporcionam um acabamento limpo e profissional que valoriza o resultado final da obra.
 
@@ -241,7 +250,7 @@ Disponíveis em diferentes larguras para atender variadas espessuras de parede, 
     {
         title: 'Brises',
         slug: 'brises',
-        image: ripados,
+        image: brise,
         shortDescription: 'Controle solar com elegância. Nossos brises em alumínio combinam funcionalidade e apelo arquitetônico.',
         description: `Os brises em alumínio são elementos de controle solar que protegem fachadas e ambientes internos da incidência direta do sol, reduzindo o calor e o ofuscamento sem bloquear completamente a visão ou a ventilação natural. São amplamente utilizados na arquitetura bioclimática e em projetos de eficiência energética.
 
@@ -258,7 +267,7 @@ O acabamento por pintura eletrostática oferece grande variedade de cores, permi
     {
         title: 'Guarda-Corpo',
         slug: 'guarda-corpo',
-        image: gradis,
+        image: guardaCorpo,
         shortDescription: 'Segurança sem abrir mão do design. Soluções em vidro e alumínio para varandas, escadas e sacadas com visual leve e moderno.',
         description: `O guarda-corpo em alumínio e vidro temperado é uma solução de proteção coletiva obrigatória em varandas, sacadas, escadas e mezaninos, conforme a norma NBR 14718. Além de cumprir sua função de segurança, agrega leveza visual e sofisticação ao ambiente.
 
@@ -275,7 +284,7 @@ Os sistemas de fixação podem ser embutidos na laje, laterais ou sobre o piso, 
     {
         title: 'Esquadrias sob medida',
         slug: 'esquadrias-sob-medida',
-        image: fachadaGlazing,
+        image: esquadria,
         shortDescription: 'Projetos personalizados para cada obra, com alta performance em vedação, isolamento e design funcional.',
         description: `As esquadrias sob medida em alumínio são a solução definitiva para projetos que exigem desempenho técnico e personalização total. Cada peça é desenvolvida a partir das especificações do arquiteto ou cliente, atendendo com precisão às demandas de vedação, isolamento acústico, térmico e estética.
 

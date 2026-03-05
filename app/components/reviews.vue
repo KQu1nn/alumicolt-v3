@@ -54,7 +54,7 @@
 </template>
 
 <script setup>
-// ref é auto-importado no Nuxt
+
 const cardData = ref([
   {
     review: `"O atendimento foi excepcional desde o primeiro contato. As janelas antirruído mudaram a qualidade de vida da minha família."`,

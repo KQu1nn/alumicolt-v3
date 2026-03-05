@@ -3,7 +3,6 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   ssr: true,
   
-  // 1. Ative explicitamente a compatibilidade com a v4 do Nuxt
   future: {
     compatibilityVersion: 4,
   },
@@ -47,7 +46,6 @@ export default defineNuxtConfig({
         lang: 'pt-BR'
       },
       link: [
-        // Verifique se a pasta é public/img/icon.webp
         { rel: 'icon', type: 'image/webp', href: '/img/icon.webp' }
       ],
     },
