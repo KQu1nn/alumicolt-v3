@@ -1,6 +1,8 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+  ssr: true,
+  
   // 1. Ative explicitamente a compatibilidade com a v4 do Nuxt
   future: {
     compatibilityVersion: 4,
@@ -13,7 +15,12 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/content',
+    '@nuxtjs/sitemap'
   ],
+
+  site: {
+    url: 'https://alumicolt.com.br'
+  },
   content: {
     experimental: {
       nativeSqlite: true // Habilita o SQLite nativo do Node.js

@@ -4,7 +4,7 @@
     :style="{ backgroundImage: `url(${heroImage})` }"
   >
     
-    <div class="absolute inset-0 bg-black/50 md:bg-gradient-to-r md:from-black/80 md:via-black/30 md:to-transparent" />
+    <div class="absolute inset-0 bg-black/50 md:bg-gradient-to-r md:from-black/90 md:via-black/40 md:to-transparent" />
 
     <div class="relative z-10 w-full px-6 md:px-15 lg:max-w-4xl py-25 md:py-0">
       
