@@ -35,14 +35,15 @@
 
     <section class="flex-1 max-w-5xl mx-auto px-6 md:px-12 py-5 md:py-10 flex flex-col gap-12">
       
-      <!-- CAROUSEL -->
+      <!-- 🔥 CAROUSEL -->
       <div class="rounded-2xl shadow-md bg-white border border-gray-200 p-4 relative">
 
         <!-- IMAGEM -->
         <div class="w-full h-[300px] md:h-[450px] flex items-center justify-center bg-gray-50 rounded-xl overflow-hidden">
           <img
             :src="product.images[currentImage]"
-            class="max-h-full max-w-full object-contain p-4"
+            @click="openLightbox"
+            class="max-h-full max-w-full object-contain p-4 cursor-zoom-in transition hover:scale-[1.02]"
             alt="Imagem do produto"
           />
         </div>
@@ -125,12 +126,21 @@
 
     </section>
 
+    <!-- 🔥 LIGHTBOX -->
+    <VueEasyLightbox
+      :visible="visible"
+      :imgs="product.images"
+      :index="currentImage"
+      @hide="closeLightbox"
+    />
+
     <Footer />
   </div>
 </template>
 
 <script setup>
 import { allProducts } from '~/data/products'
+import VueEasyLightbox from 'vue-easy-lightbox'
 
 const route = useRoute()
 const lojaUrl = 'https://alumicolt-test.rf.gd'
@@ -139,7 +149,7 @@ const product = computed(() =>
   allProducts.find(p => p.slug === route.params.slug) || allProducts[0]
 )
 
-/* 🔥 CONTROLE DO CAROUSEL */
+/* 🔥 CAROUSEL */
 const currentImage = ref(0)
 
 const nextImage = () => {
@@ -156,6 +166,17 @@ const prevImage = () => {
   } else {
     currentImage.value = product.value.images.length - 1
   }
+}
+
+/* 🔥 LIGHTBOX */
+const visible = ref(false)
+
+const openLightbox = () => {
+  visible.value = true
+}
+
+const closeLightbox = () => {
+  visible.value = false
 }
 
 /* SEO */

@@ -6,7 +6,9 @@ export const allProducts = [
       '/images/products/fachada-glazing.png',
     ],
     shortDescription: 'Soluções sofisticadas em pele de vidro que unem estética contemporânea, eficiência térmica e máxima luminosidade.',
-    description: `A fachada glazing é um sistema de fachada em vidro muito utilizado na arquitetura moderna...`,
+    description: `A fachada glazing é um sistema de fechamento em vidro muito utilizado na arquitetura moderna. Proporciona um visual elegante e maior entrada de luz natural.
+
+Além do apelo estético, oferece bom desempenho térmico e acústico, sendo ideal para projetos comerciais e residenciais que buscam sofisticação e valorização do imóvel.`,
     specs: [
       { label: 'Material', value: 'Alumínio e vidro temperado' },
       { label: 'Acabamento', value: 'Anodizado ou pintado eletrostático' },
@@ -21,7 +23,9 @@ export const allProducts = [
       '/images/products/ripados.png',
     ],
     shortDescription: 'Perfis em alumínio com design moderno, ideais para compor fachadas e ambientes internos.',
-    description: `Os ripados em alumínio são elementos arquitetônicos versáteis...`,
+    description: `Os ripados em alumínio são elementos decorativos que agregam modernidade e sofisticação ao ambiente. Podem ser utilizados tanto em áreas internas quanto externas.
+
+Além do design, contribuem para ventilação e controle de luminosidade, sendo uma solução versátil para diferentes tipos de projeto.`,
     specs: [
       { label: 'Material', value: 'Alumínio extrudado' },
       { label: 'Acabamento', value: 'Pintura eletrostática ou anodizado' },
@@ -36,7 +40,9 @@ export const allProducts = [
       '/images/products/gradis.png',
     ],
     shortDescription: 'Segurança e durabilidade com acabamento refinado. Produzidos sob medida.',
-    description: `Os gradis e portões em alumínio são soluções que unem segurança e design...`,
+    description: `Os gradis e portões em alumínio oferecem segurança, resistência e baixa manutenção. São ideais para residências, comércios e condomínios.
+
+Com diversas opções de modelos e acabamentos, permitem personalização completa para atender ao estilo do projeto.`,
     specs: [
       { label: 'Material', value: 'Alumínio estrutural' },
       { label: 'Acabamento', value: 'Pintura eletrostática' },
@@ -51,7 +57,9 @@ export const allProducts = [
       '/images/products/portas-de-entrada.png',
     ],
     shortDescription: 'Portas robustas, elegantes e de alto padrão para segurança e impacto visual.',
-    description: `As portas de entrada em alumínio e vidro temperado são o cartão de visitas...`,
+    description: `As portas de entrada em alumínio e vidro são projetadas para unir segurança, durabilidade e estética. Funcionam como destaque na fachada do imóvel.
+
+Disponíveis em diferentes estilos e acabamentos, garantem resistência ao tempo e valorização do ambiente.`,
     specs: [
       { label: 'Material', value: 'Alumínio e vidro temperado' },
       { label: 'Acabamento', value: 'Anodizado, escovado ou pintado' },
@@ -66,7 +74,9 @@ export const allProducts = [
       '/images/products/box.webp',
     ],
     shortDescription: 'Funcionalidade e estilo em soluções de vidro temperado com montagem precisa.',
-    description: `Os boxes para banheiro em vidro temperado são a escolha ideal para higiene...`,
+    description: `Os boxes para banheiro em vidro temperado são ideais para garantir praticidade, higiene e organização do ambiente.
+
+Com diferentes tipos de abertura e acabamentos, oferecem segurança, fácil limpeza e um visual moderno.`,
     specs: [
       { label: 'Material', value: 'Vidro temperado 8mm' },
       { label: 'Perfis', value: 'Alumínio anodizado ou inox' },
@@ -81,7 +91,9 @@ export const allProducts = [
       '/images/products/temperados.png',
     ],
     shortDescription: 'Conjuntos completos para portas e janelas com vidro temperado.',
-    description: `Os kits temperados reúnem vidro, perfis e ferragens em um único pacote...`,
+    description: `Os kits temperados são soluções completas que incluem vidro, ferragens e perfis, facilitando a instalação.
+
+São ideais para portas, janelas e divisórias, garantindo praticidade, segurança e acabamento profissional.`,
     specs: [
       { label: 'Composição', value: 'Vidro + ferragens + perfis' },
       { label: 'Vidro', value: 'Temperado de 8mm a 12mm' },
@@ -96,7 +108,9 @@ export const allProducts = [
       '/images/products/claraboias.jpg',
     ],
     shortDescription: 'Iluminação natural com eficiência e resistência.',
-    description: `As claraboias permitem a entrada de luz natural em ambientes internos...`,
+    description: `As claraboias permitem a entrada de luz natural em ambientes internos, reduzindo o consumo de energia elétrica durante o dia.
+
+São fabricadas com materiais resistentes e vedação eficiente, garantindo durabilidade e conforto.`,
     specs: [
       { label: 'Material', value: 'Alumínio e vidro ou policarbonato' },
       { label: 'Vedação', value: 'Borracha EPDM de alta durabilidade' },
@@ -111,7 +125,9 @@ export const allProducts = [
       '/images/products/contramarco.png',
     ],
     shortDescription: 'Acabamento técnico que garante encaixe perfeito das esquadrias.',
-    description: `Os contramarcos são peças técnicas essenciais para a instalação correta...`,
+    description: `Os contramarcos são peças fundamentais para a instalação correta de portas e janelas, garantindo alinhamento e vedação.
+
+Contribuem para um melhor acabamento e maior durabilidade das esquadrias.`,
     specs: [
       { label: 'Material', value: 'Alumínio extrudado' },
       { label: 'Acabamento', value: 'Pintura eletrostática ou anodizado' },
@@ -126,7 +142,9 @@ export const allProducts = [
       '/images/products/brise.jpg',
     ],
     shortDescription: 'Controle solar com elegância e apelo arquitetônico.',
-    description: `Os brises em alumínio são elementos de controle solar que protegem fachadas...`,
+    description: `Os brises em alumínio são utilizados para controle da incidência solar, proporcionando conforto térmico aos ambientes.
+
+Além da funcionalidade, agregam valor estético e modernidade às fachadas.`,
     specs: [
       { label: 'Material', value: 'Alumínio extrudado' },
       { label: 'Orientação', value: 'Horizontal ou vertical' },
@@ -141,7 +159,9 @@ export const allProducts = [
       '/images/products/guarda-corpo.webp',
     ],
     shortDescription: 'Segurança sem abrir mão do design para varandas e escadas.',
-    description: `O guarda-corpo em alumínio e vidro temperado é uma solução de proteção...`,
+    description: `O guarda-corpo em alumínio com vidro oferece proteção e segurança para varandas, escadas e sacadas.
+
+Com design moderno, mantém a leveza visual do ambiente sem comprometer a resistência.`,
     specs: [
       { label: 'Material', value: 'Alumínio e vidro temperado' },
       { label: 'Vidro', value: 'Temperado ou laminado 10mm' },
@@ -156,7 +176,9 @@ export const allProducts = [
       '/images/products/esquadrias.jpg',
     ],
     shortDescription: 'Projetos personalizados com alta performance em vedação e isolamento.',
-    description: `As esquadrias sob medida em alumínio são a solução definitiva para projetos...`,
+    description: `As esquadrias sob medida em alumínio são desenvolvidas conforme o projeto, garantindo encaixe perfeito e alto desempenho.
+
+Oferecem excelente vedação, durabilidade e variedade de modelos para atender diferentes necessidades.`,
     specs: [
       { label: 'Material', value: 'Alumínio série 25 ou 30' },
       { label: 'Vidro', value: 'Simples, duplo ou laminado' },
